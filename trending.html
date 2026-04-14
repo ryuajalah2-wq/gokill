@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hohonime | Trending</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">hoho</span>
+        <span class="brand-name">nime</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="collection.html">Collection</a>
+        <a href="premium.html">Premium</a>
+      </nav>
+      <form class="search-bar" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Cari judul anime..." aria-label="Search anime" />
+      </form>
+      <a href="premium.html" class="cta-btn">Join Premium</a>
+    </header>
+
+    <main>
+      <section class="hero" id="trending-page">
+        <div class="hero-copy">
+          <p class="eyebrow">Trending sekarang</p>
+          <h1>Anime populer dengan nuansa luxury modern</h1>
+          <p class="hero-description">Jelajahi judul-judul top yang sedang viral dan nikmati suasana premium di setiap episode.</p>
+          <div class="hero-actions">
+            <a href="#top-picks" class="button primary">Lihat Top Picks</a>
+            <a href="#new-arrivals" class="button secondary">Rilis Baru</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-badge">Hot</div>
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h2>Galaxy Crusade</h2>
+            <p>Serial aksi sci-fi dengan visual modern dan alur cerita memikat.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-strip" id="top-picks">
+        <div>
+          <h3>Top 1</h3>
+          <p>Galaxy Crusade</p>
+        </div>
+        <div>
+          <h3>Top 2</h3>
+          <p>Moonlight Opera</p>
+        </div>
+        <div>
+          <h3>Top 3</h3>
+          <p>Midnight Dealer</p>
+        </div>
+      </section>
+
+      <section class="grid-section" id="new-arrivals">
+        <div class="section-header">
+          <div>
+            <p class="section-title">Rilis Baru</p>
+            <h2>Serial anime baru yang wajib ditonton</h2>
+          </div>
+          <a href="collection.html" class="view-all">Lihat Koleksi</a>
+        </div>
+        <div class="card-grid" id="trending-grid"></div>
+        <div class="pagination-wrapper" id="trending-pagination"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p class="brand-footer">hohonime</p>
+        <p>Nikmati anime trending dalam tampilan mewah dan modern.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="collection.html">Collection</a>
+        <a href="premium.html">Premium</a>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

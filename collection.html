@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hohonime | Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">hoho</span>
+        <span class="brand-name">nime</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="collection.html">Collection</a>
+        <a href="premium.html">Premium</a>
+      </nav>
+      <form class="search-bar" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Cari judul anime..." aria-label="Search anime" />
+      </form>
+      <a href="premium.html" class="cta-btn">Join Premium</a>
+    </header>
+
+    <main>
+      <section class="hero" id="collection-page">
+        <div class="hero-copy">
+          <p class="eyebrow">Koleksi Premium</p>
+          <h1>Temukan anime terbaik di setiap genre</h1>
+          <p class="hero-description">Kumpulan anime kurasi dengan tampilan mewah untuk sesi nonton yang lebih elegan.</p>
+          <div class="hero-actions">
+            <a href="#genres" class="button primary">Lihat Genre</a>
+            <a href="#featured" class="button secondary">Rekomendasi</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-badge">Curated</div>
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h2>Collection Vault</h2>
+            <p>gokil</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-strip" id="genres">
+        <div>
+          <h3>Action</h3>
+          <p>Judul intens dengan cerita penuh energi.</p>
+        </div>
+        <div>
+          <h3>Fantasy</h3>
+          <p>Dunia imajinatif dengan visual memukau.</p>
+        </div>
+        <div>
+          <h3>Drama</h3>
+          <p>Cerita emosional dengan karakter mendalam.</p>
+        </div>
+      </section>
+
+      <section class="grid-section" id="featured">
+        <div class="section-header">
+          <div>
+            <p class="section-title">Rekomendasi</p>
+            <h2>Koleksi pilihan untuk suasana malam</h2>
+          </div>
+          <a href="premium.html" class="view-all">Upgrade Premium</a>
+        </div>
+        <div class="card-grid" id="collection-grid"></div>
+        <div class="pagination-wrapper" id="collection-pagination"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p class="brand-footer">hohonime</p>
+        <p>Koleksi anime dengan daya tarik modern dan premium.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="premium.html">Premium</a>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hohonime | Search</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">hoho</span>
+        <span class="brand-name">nime</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="collection.html">Collection</a>
+        <a href="premium.html">Premium</a>
+      </nav>
+      <form class="search-bar" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Cari judul anime..." aria-label="Search anime" />
+      </form>
+      <a href="premium.html" class="cta-btn">Join Premium</a>
+    </header>
+
+    <main>
+      <section class="hero search-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Jikan API Anime</p>
+          <h1>Hasil pencarian untuk <span id="search-keyword">...</span></h1>
+          <p class="hero-description">Menampilkan hasil dari Jikan API v4 untuk anime populer dan terbaru.</p>
+        </div>
+        <div class="hero-card">
+          <div class="hero-badge">Search</div>
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h2>Query anime</h2>
+            <p>Gunakan kata kunci untuk mencari judul anime terbaru atau populer.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-results" id="search-results">
+        <div class="section-header">
+          <div>
+            <p class="section-title">Hasil Pencarian</p>
+            <h2 id="search-heading">Menunggu pencarian...</h2>
+          </div>
+        </div>
+        <div class="card-grid" id="search-grid"></div>
+        <p class="search-status" id="search-status"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p class="brand-footer">hohonime</p>
+        <p>Search page dengan integrasi API premium.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="collection.html">Collection</a>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

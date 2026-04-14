@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hohonime | Anime Detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">hoho</span>
+        <span class="brand-name">nime</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="collection.html">Collection</a>
+        <a href="premium.html">Premium</a>
+      </nav>
+      <form class="search-bar" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Cari judul anime..." aria-label="Search anime" />
+      </form>
+      <a href="premium.html" class="cta-btn">Join Premium</a>
+    </header>
+
+    <main>
+      <section class="anime-detail-hero">
+        <div class="detail-poster" id="anime-poster">
+          <img id="anime-poster-img" alt="Poster Anime" />
+        </div>
+        <div class="detail-copy">
+          <p class="eyebrow" id="anime-type">Anime Detail</p>
+          <h1 id="anime-title">Loading...</h1>
+          <div class="detail-meta">
+            <span id="anime-score">-</span>
+            <span id="anime-episodes">- eps</span>
+          </div>
+          <p class="detail-description" id="anime-synopsis">Menunggu data anime...</p>
+          <div class="detail-characters" id="anime-characters"></div>
+          <div class="detail-actions">
+            <a id="watch-button" href="#" class="button primary">Tonton Anime</a>
+            <a href="javascript:history.back()" class="button secondary">Kembali</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p class="brand-footer">hohonime</p>
+        <p>Detail anime dengan info poster, skor, karakter, dan episode.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="collection.html">Collection</a>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

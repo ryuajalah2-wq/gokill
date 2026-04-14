@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hohonime | Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">hoho</span>
+        <span class="brand-name">nime</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="collection.html">Collection</a>
+        <a href="premium.html">Premium</a>
+      </nav>
+      <form class="search-bar" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Cari judul anime..." aria-label="Search anime" />
+      </form>
+      <a href="premium.html" class="cta-btn">Join Premium</a>
+    </header>
+
+    <main>
+      <section class="hero" id="premium-page">
+        <div class="hero-copy">
+          <p class="eyebrow">Premium member</p>
+          <h1>Naikkan pengalaman nonton anime ke level luxury</h1>
+          <p class="hero-description">Bebas iklan, akses episode eksklusif, plus event komunitas mingguan untuk penonton premium.</p>
+          <div class="hero-actions">
+            <a href="#plans" class="button primary">Lihat Paket</a>
+            <a href="#benefits" class="button secondary">Keuntungan</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-badge">Exclusive</div>
+          <div class="card-image"></div>
+          <div class="card-info">
+            <h2>Premium Pass</h2>
+            <p>Akses eksklusif untuk streaming tanpa batas dan konten VIP.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-strip" id="benefits">
+        <div>
+          <h3>Bebas Iklan</h3>
+          <p>Nikmati alur cerita tanpa gangguan.</p>
+        </div>
+        <div>
+          <h3>Akses Eksklusif</h3>
+          <p>Episode khusus dan preview tayangan baru.</p>
+        </div>
+        <div>
+          <h3>Event VIP</h3>
+          <p>Live chat, kuis, dan sesi komunitas premium.</p>
+        </div>
+      </section>
+
+      <section class="grid-section" id="plans">
+        <div class="section-header">
+          <div>
+            <p class="section-title">Paket Premium</p>
+            <h2>Pilih paket luxury yang cocok</h2>
+          </div>
+          <a href="index.html" class="view-all">Kembali ke Home</a>
+        </div>
+        <div class="card-grid" id="premium-grid"></div>
+        <div class="pagination-wrapper" id="premium-pagination"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p class="brand-footer">hohonime</p>
+        <p>Paket premium untuk pengalaman nonton anime paling elegan.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="collection.html">Collection</a>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

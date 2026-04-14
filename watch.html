@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hohonime | Tonton Anime</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">hoho</span>
+        <span class="brand-name">nime</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="collection.html">Collection</a>
+        <a href="premium.html">Premium</a>
+      </nav>
+      <form class="search-bar" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Cari judul anime..." aria-label="Search anime" />
+      </form>
+      <a href="premium.html" class="cta-btn">Join Premium</a>
+    </header>
+
+    <main>
+      <section class="watch-hero">
+        <div class="watch-player" id="watch-player">
+          <div class="watch-video-placeholder">
+            <p>Pilih episode untuk menonton</p>
+          </div>
+        </div>
+        <div class="watch-sidebar">
+          <div class="watch-meta">
+            <p class="eyebrow" id="watch-anime-type">Player Anime</p>
+            <h1 id="watch-anime-title">Memuat anime...</h1>
+            <div class="watch-current">
+              <h2 id="watch-current-title">Episode 1</h2>
+              <p id="watch-current-desc">Pilih episode untuk mulai menonton.</p>
+            </div>
+            <div class="watch-server-group">
+              <h3>Server</h3>
+              <div class="watch-server-list" id="watch-server-list"></div>
+            </div>
+          </div>
+          <div class="episode-list" id="episode-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p class="brand-footer">hohonime</p>
+        <p>Halaman tonton anime dengan daftar episode dan media player.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="collection.html">Collection</a>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
